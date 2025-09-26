@@ -46,3 +46,7 @@ println(data_f)
 
 #Plot line graph with title and axis' labeled
 plot(data_f.year, data_f.mean_light, xlabel="Year", ylabel="Mean Light Intensity", title="Geita Mine and Town, Tanzania, NTTL 2014-2024", marker=:circle, xticks=(data_f.year, string.(data_f.year)), legend=false)
+
+#Save graph as a png image (uncomment the lines below if you want to save the image)
+    # GM_nl_graph = plot(data_f.year, data_f.mean_light, xlabel="Year", ylabel="Mean Light Intensity", title="Geita Mine and Town, Tanzania, NTTL 2014-2024", marker=:circle, xticks=(data_f.year, string.(data_f.year)), legend=false)
+    # savefig(GM_nl_graph,"desired/path/to/save/GM_nl_graph.png")
