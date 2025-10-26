@@ -1,6 +1,11 @@
 # Mineral-Deposits-and-Economic-Prosperity
 Code and coordinates used for the Mineral Deposits and Economic Prosperity paper. 
 
+We used three main functions in our program to analyze NTTL development - winsorization, loops, and plotting. Winsorization was important in removing extreme highs and lows, negating the likelihood that outliers skewed our results. We then looped the code to run over each year, and plotted to visualize the NTTL, both as line-charts and image representations. 
+
+The code for the winsorization, loops, and plotting, is in the "NTTL_Plotting_and_Looping.jl" file. 
+To see the coordinates used for each mine, look in the "Coordinates_used.txt" file. 
+
 To download the files used:
   1. Go to https://eogdata.mines.edu/nighttime_light
   2. Follow the path annual > v21
